@@ -1,0 +1,24 @@
+﻿<Window x:Class="FindAoEII.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FindAoEII"
+        mc:Ignorable="d"
+        Title="Find AoE II Installation" Width="800" Height="200"
+        FontSize="16">
+    <Border Padding="10">
+        <StackPanel>
+            <TextBox x:Name="pathTextBox"
+                     IsReadOnly="True"
+                     MouseDoubleClick="SelectAllTextbox"
+                     Padding="2"></TextBox>
+            <Button x:Name="findPath"
+                    Margin="0 10 0 0"
+                    Click="FindPath_Click">Find AoE II Path</Button>
+            <Button x:Name="copyButton"
+                    Margin="0 10 0 0"
+                    Click="copyButton_Click">Copy Path</Button>
+        </StackPanel>
+    </Border>
+</Window>
