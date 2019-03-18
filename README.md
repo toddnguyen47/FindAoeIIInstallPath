@@ -10,15 +10,15 @@ If you cannot open zip files, download and install [7Zip](https://www.7-zip.org/
 3. Unzip the `Voobly_AoeII.zip` file. You should now have a folder called `OpenThisFolder`. Open this folder as well.
 4. Try the *Easy Method* mentioned below first. If that does not work, then try the *Manual Method*.
 
-## Easy Method
-4. Open the folder `OpenThisFolder`
-5. Run `FindAoEII.exe`. Don't worry, I wrote this program so it's perfectly safe.
-6. Click on `Find AoE II Path`. If the program cannot find a path, supply in the textbox where you installed your Age of Empires II game. For example, I installed my AoE II at `Z:\Steam\steamapps\common\Age2HD\ ` so I would copy + paste this path into the textbox.
-7. Click on `Copy Files`. You're done!
+## Step 1A: Easy Method
+5. Open the folder `OpenThisFolder`
+6. Run `FindAoEII.exe`. Don't worry, I wrote this program so it's perfectly safe.
+7. Click on `Find AoE II Path`. If the program cannot find a path, supply in the textbox where you installed your Age of Empires II game. For example, I installed my AoE II at `Z:\Steam\steamapps\common\Age2HD\ ` so I would copy + paste this path into the textbox.
+8. Click on `Copy Files`. You're done!
 
-## Manual Method
-4. Within `AoeII_Voobly` folder, copy all the files to where you installed AoE II. For example, I installed my AoE II at `Z:\Steam\steamapps\common\Age2HD\ `, so I would copy all files into the folder above. The 20+ files in the zipped file will exist alongside the files that Steam installed.
-5. If you need help finding where you installed your AoE II, you can use a program I wrote to find the path:
+## Step 1B: Manual Method
+5. Within `AoeII_Voobly` folder, copy all the files to where you installed AoE II. For example, I installed my AoE II at `Z:\Steam\steamapps\common\Age2HD\ `, so I would copy all files into the folder above. The 20+ files in the zipped file will exist alongside the files that Steam installed.
+6. If you need help finding where you installed your AoE II, you can use a program I wrote to find the path:
 ```
 https://github.com/toddnguyen47/Find_AoeII_Install_Path/releases/download/1.0/FindAoEII.exe
 ```
