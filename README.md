@@ -3,7 +3,6 @@ This is a quicker way to install WolololKingdoms and Voobly. I zipped all the fi
 
 # STEP 1
 
-[Step 1 Screenshot](https://i.imgur.com/u9GMAzk.png)
 1. Download `Voobly_AoeII.zip` [here](https://drive.google.com/drive/u/1/folders/1Wt3T3mNRzze0nKxTX_H0wlh8WkNjQwAV)
 If you cannot open zip files, download and install [7Zip](https://www.7-zip.org/download.html)
 2. Ask me for the password to the zipped file.
@@ -16,6 +15,7 @@ If you cannot open zip files, download and install [7Zip](https://www.7-zip.org/
 7. Click on `Copy Files`. You're done!
 
 ## Step 1B: Manual Method
+[Step 1 Screenshot](https://i.imgur.com/u9GMAzk.png)
 5. Within `AoeII_Voobly` folder, copy all the files to where you installed AoE II. For example, I installed my AoE II at `Z:\Steam\steamapps\common\Age2HD\ `, so I would copy all files into the folder above. The 20+ files in the zipped file will exist alongside the files that Steam installed.
 6. If you need help finding where you installed your AoE II, you can use a program I wrote to find the path:
 ```
