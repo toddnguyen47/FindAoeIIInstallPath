@@ -16,6 +16,7 @@ If you cannot open zip files, download and install [7Zip](https://www.7-zip.org/
 
 ## Step 1B: Manual Method
 [Step 1 Screenshot](https://i.imgur.com/u9GMAzk.png)
+
 5. Within `AoeII_Voobly` folder, copy all the files to where you installed AoE II. For example, I installed my AoE II at `Z:\Steam\steamapps\common\Age2HD\ `, so I would copy all files into the folder above. The 20+ files in the zipped file will exist alongside the files that Steam installed.
 6. If you need help finding where you installed your AoE II, you can use a program I wrote to find the path:
 ```
