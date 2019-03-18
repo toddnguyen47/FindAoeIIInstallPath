@@ -12,13 +12,35 @@
             <TextBox x:Name="pathTextBox"
                      IsReadOnly="True"
                      MouseDoubleClick="SelectAllTextbox"
-                     Padding="2"></TextBox>
-            <Button x:Name="findPath"
-                    Margin="0 10 0 0"
-                    Click="FindPath_Click">Find AoE II Path</Button>
-            <Button x:Name="copyButton"
-                    Margin="0 10 0 0"
-                    Click="copyButton_Click">Copy Path</Button>
+                     Padding="2"
+                     TextChanged="pathTextBox_TextChanged"></TextBox>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Button x:Name="findPath"
+                        Margin="0 10 0 0"
+                        Click="FindPath_Click"
+                        Grid.Column="1" Grid.Row="0">Find AoE II Path</Button>
+                <Button x:Name="copyButton"
+                        Margin="0 10 0 0"
+                        Click="copyButton_Click"
+                        IsEnabled="False"
+                        Grid.Column="1" Grid.Row="1">
+                    Copy Files
+                </Button>
+            </Grid>
+            <Grid Margin="0 10 0 0" Height="25">
+                <ProgressBar x:Name="copyProgressBar"></ProgressBar>
+                <TextBlock HorizontalAlignment="Center"
+                    VerticalAlignment="Center" x:Name="copyProgressBarText"></TextBlock>
+            </Grid>
         </StackPanel>
     </Border>
 </Window>
