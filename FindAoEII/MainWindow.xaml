@@ -10,7 +10,6 @@
     <Border Padding="10">
         <StackPanel>
             <TextBox x:Name="pathTextBox"
-                     IsReadOnly="True"
                      MouseDoubleClick="SelectAllTextbox"
                      Padding="2"
                      TextChanged="pathTextBox_TextChanged"></TextBox>
