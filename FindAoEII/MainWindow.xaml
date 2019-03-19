@@ -9,6 +9,7 @@
         FontSize="16">
     <Border Padding="10">
         <StackPanel>
+            <TextBlock>AoE II Installation Path</TextBlock>
             <TextBox x:Name="pathTextBox"
                      MouseDoubleClick="SelectAllTextbox"
                      Padding="2"
