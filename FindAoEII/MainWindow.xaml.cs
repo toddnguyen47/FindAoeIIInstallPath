@@ -111,11 +111,18 @@ namespace FindAoEII
             {
                 this.copyProgressBar.IsIndeterminate = false;
                 this.copyProgressBarText.Text = "";
-                MessageBox.Show("Copying Completed!", "Copy Complete", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                // Check for errors
+                if (e2.Result != null)
+                {
+                    MessageBox.Show("Copying Completed!", "Copy Complete", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
             };
+
             // Pass arguments to worker
             // Ref: https://stackoverflow.com/a/4807200/6323360
-            Tuple<String> workerArgs = new Tuple<string>(aoe2Path);
+            bool copyHotkeys = (bool)this.copyHotkeys.IsChecked;
+            Tuple<string, bool> workerArgs = new Tuple<string, bool>(aoe2Path, copyHotkeys);
             bgWorker.RunWorkerAsync(workerArgs);
         }
 
@@ -123,12 +130,35 @@ namespace FindAoEII
         private void bgWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             (sender as BackgroundWorker).ReportProgress(0);
+            // Initially, the result is set to be good. Any errors will
+            // set the result to null
+            e.Result = 1;
+
             string curDir = System.AppDomain.CurrentDomain.BaseDirectory;
             string tempPath = System.IO.Path.Combine(curDir, "AoeII_Voobly");
 
-            Tuple<String> workerArgs = (Tuple<String>)e.Argument;
+            Tuple<string, bool> workerArgs = (Tuple<string, bool>) e.Argument;
 
             MainWindow.DirectoryCopy(tempPath, workerArgs.Item1, true);
+
+            // Copy hotkeys
+            if (workerArgs.Item2)
+            {
+                string srcPath2 = System.IO.Path.Combine(workerArgs.Item1, "Profiles", "player0.hki");
+                if (false == System.IO.File.Exists(srcPath2))
+                {
+                    MessageBox.Show("No hotkeys found. Usually, this is under Age2HD\\Steam\\Profiles\\player0",
+                        "No hotkeys found", MessageBoxButton.OK, MessageBoxImage.Error);
+                    e.Result = null;
+                }
+                else
+                {
+                    string destPath2 = System.IO.Path.Combine(workerArgs.Item1, "player1.hki");
+                    System.IO.File.Copy(srcPath2, destPath2, true);
+                    MessageBox.Show("Finished Copying Hotkeys.", "Finished", MessageBoxButton.OK,
+                        MessageBoxImage.Information);
+                }
+            }
         }
 
 
