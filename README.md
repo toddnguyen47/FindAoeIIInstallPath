@@ -3,7 +3,7 @@ This is a quicker way to install WolololKingdoms and Voobly. I zipped all the fi
 
 # STEP 1
 
-1. Download `Voobly_AoeII.zip` [here](https://drive.google.com/drive/u/1/folders/1Wt3T3mNRzze0nKxTX_H0wlh8WkNjQwAV)
+1. Download `Voobly_AoeII.zip` [here](https://drive.google.com/drive/u/1/folders/1Wt3T3mNRzze0nKxTX_H0wlh8WkNjQwAV).
 If you cannot open zip files, download and install [7Zip](https://www.7-zip.org/download.html)
 2. Ask me for the password to the zipped file.
 3. Unzip the `Voobly_AoeII.zip` file. You should now have a folder called `OpenThisFolder`. Open this folder as well.
