@@ -15,7 +15,8 @@
                      Padding="2"
                      TextChanged="pathTextBox_TextChanged"></TextBox>
             <CheckBox x:Name="copyHotkeys"
-                      Margin="0 10 0 0">Use my Steam AoE Hotkeys</CheckBox>
+                      Margin="0 10 0 0"
+                      IsChecked="True">Use my Steam AoE Hotkeys</CheckBox>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
